@@ -2,9 +2,40 @@
 <html>
 <head>
     <title>My First Page</title>
+
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>WildApothecary  Home  Common Weeds  About Us</h1>
+    <header class="header">
+        <div class="brand">WildApothecary</div>
+
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Common Weeds</a>
+            <a href="#">About Us</a>
+        </nav>
+    </header>
+
     <p>Common Weeds, Remarkable Benefits</p>
 </body>
 </html>
