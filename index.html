@@ -58,7 +58,11 @@
             margin-top: 60px;
         }
 
-        .gallery img {
+        .card {
+            text-align: center;
+        }
+
+        .card img {
             width: 200px;
             height: 150px;
             object-fit: cover;
@@ -66,8 +70,13 @@
             transition: transform 0.3s ease;
         }
 
-        .gallery img:hover {
+        .card img:hover {
             transform: scale(1.05);
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 16px;
         }
 
     </style>
@@ -102,17 +111,20 @@
 
     <section class="gallery">
 
-    <a href="#">
-        <img src="dandelion.jpg" alt="Dandelion">
-    </a>
+    <div class="card">
+        <img src="images/dandelion.jpg" alt="Dandelion">
+        <p>Dandelion</p>
+    </div>
 
-    <a href="#">
-        <img src="nettle.jpg" alt="Nettle">
-    </a>
+    <div class="card">
+        <img src="images/nettle.jpg" alt="Nettle">
+        <p>Nettle</p>
+    </div>
 
-    <a href="#">
-        <img src="clover.jpg" alt="Clover">
-    </a>
+    <div class="card">
+        <img src="images/clover.jpg" alt="Clover">
+        <p>Clover</p>
+    </div>
 
 </section>
     
