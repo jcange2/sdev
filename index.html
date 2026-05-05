@@ -51,6 +51,25 @@
             margin: 20px auto; 
         }
 
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 60px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
     </style>
 </head>
 
@@ -80,6 +99,23 @@
     </p>
         
 </section>
+
+    <section class="gallery">
+
+    <a href="#">
+        <img src="dandelion.jpg" alt="Dandelion">
+    </a>
+
+    <a href="#">
+        <img src="nettle.jpg" alt="Nettle">
+    </a>
+
+    <a href="#">
+        <img src="clover.jpg" alt="Clover">
+    </a>
+
+</section>
     
 </body>
+    
 </html>
