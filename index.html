@@ -82,6 +82,34 @@
             font-size: 16px;
         }
 
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f4f4f4;
+            min-width: 150px;
+            border-radius: 6px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
     </style>
 </head>
 
@@ -91,7 +119,17 @@
 
         <nav class="nav">
             <a href="#">Home</a>
-            <a href="#">Common Weeds</a>
+            
+            <div class="dropdown">
+                <a href="#">Common Weeds</a>
+
+                <div class="dropdown-content">
+                    <a href="dandelion.html">Dandelion</a>
+                    <a href="nettle.html">Nettle</a>
+                    <a href="clover.html">Clover</a>
+                </div>
+            </div>
+            
             <a href="#">About Us</a>
         </nav>
     </header>
